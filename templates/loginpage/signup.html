@@ -1,0 +1,42 @@
+ <!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href=''>
+    <title></title>
+</head>    
+<body>
+    <h3>Sign Up</h3>
+
+    <form action='/Signup' method='post'>
+    {% csrf_token %}    
+        <label for=''>username</label>
+        <input type='text' id='username' name='username' placeholder=' Create a username (only letters and numbers)' Required >
+        <br>
+
+        <label for=''>first name</label>
+        <input type='text' id='fname' name='fname' placeholder='Enter your first name' Required >
+        <br>
+
+        <label for=''>last name</label>
+        <input type='text' id='lname' name='lname' placeholder='Enter your last name' Required >
+        <br>
+        <label for=''>email address</label>
+        <input type='email' id='email' name='email' placeholder='Enter your email address' Required >
+        
+        <br>
+        <label for=''>password</label>
+        <input type='password' id='password1' name='password1' placeholder=' Create a password' Required >
+        <br>
+        <label for=''>confirm password</label>
+        <input type='password' id='password2' name='password2' placeholder='Confirm your password' Required >
+        <br>
+
+        <button type='submit'>Sign Up</button>
+    </form>
+
+    <script src=''async defer></script>
+
+</body>
+</html> 
